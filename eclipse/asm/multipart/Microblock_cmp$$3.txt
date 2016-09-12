@@ -1,0 +1,335 @@
+// class version 50.0 (50)
+// access flags 0x1
+public class Microblock_cmp$$3 extends codechicken/microblock/Microblock  implements codechicken/microblock/FaceMicroblock codechicken/microblock/FaceMicroblockClient  {
+
+
+  // access flags 0x2
+  private Lcodechicken/lib/vec/Cuboid6; renderBounds
+
+  // access flags 0x2
+  private I renderMask
+
+  // access flags 0x1
+  public <init>(I)V
+    ALOAD 0
+    ILOAD 1
+    INVOKESPECIAL codechicken/microblock/Microblock.<init> (I)V
+    ALOAD 0
+    INVOKESTATIC codechicken/multipart/JPartialOcclusion$class.$init$ (Lcodechicken/multipart/JPartialOcclusion;)V
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/TMicroOcclusion$class.$init$ (Lcodechicken/microblock/TMicroOcclusion;)V
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/CommonMicroblock$class.$init$ (Lcodechicken/microblock/CommonMicroblock;)V
+    ALOAD 0
+    INVOKESTATIC codechicken/multipart/TFacePart$class.$init$ (Lcodechicken/multipart/TFacePart;)V
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/FaceMicroblock$class.$init$ (Lcodechicken/microblock/FaceMicroblock;)V
+    ALOAD 0
+    INVOKESTATIC codechicken/multipart/JIconHitEffects$class.$init$ (Lcodechicken/multipart/JIconHitEffects;)V
+    ALOAD 0
+    INVOKESTATIC codechicken/multipart/TIconHitEffects$class.$init$ (Lcodechicken/multipart/TIconHitEffects;)V
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/MicroblockClient$class.$init$ (Lcodechicken/microblock/MicroblockClient;)V
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/TMicroOcclusionClient$class.$init$ (Lcodechicken/microblock/TMicroOcclusionClient;)V
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/CommonMicroblockClient$class.$init$ (Lcodechicken/microblock/CommonMicroblockClient;)V
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/FaceMicroblockClient$class.$init$ (Lcodechicken/microblock/FaceMicroblockClient;)V
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public codechicken$microblock$TMicroOcclusion$$super$occlusionTest(Lcodechicken/multipart/TMultiPart;)Z
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL codechicken/multipart/TMultiPart.occlusionTest (Lcodechicken/multipart/TMultiPart;)Z
+    IRETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public renderBounds()Lcodechicken/lib/vec/Cuboid6;
+    ALOAD 0
+    GETFIELD Microblock_cmp$$3.renderBounds : Lcodechicken/lib/vec/Cuboid6;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public renderBounds_$eq(Lcodechicken/lib/vec/Cuboid6;)V
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD Microblock_cmp$$3.renderBounds : Lcodechicken/lib/vec/Cuboid6;
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public renderMask()I
+    ALOAD 0
+    GETFIELD Microblock_cmp$$3.renderMask : I
+    IRETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public renderMask_$eq(I)V
+    ALOAD 0
+    ILOAD 1
+    PUTFIELD Microblock_cmp$$3.renderMask : I
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public codechicken$microblock$TMicroOcclusionClient$$super$onPartChanged(Lcodechicken/multipart/TMultiPart;)V
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL codechicken/multipart/TMultiPart.onPartChanged (Lcodechicken/multipart/TMultiPart;)V
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public codechicken$microblock$TMicroOcclusionClient$$super$onAdded()V
+    ALOAD 0
+    INVOKESPECIAL codechicken/multipart/TMultiPart.onAdded ()V
+    RETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public codechicken$microblock$TMicroOcclusionClient$$super$read(Lcodechicken/lib/data/MCDataInput;)V
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL codechicken/microblock/Microblock.read (Lcodechicken/lib/data/MCDataInput;)V
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public render(Lcodechicken/lib/vec/Vector3;I)V
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    INVOKESTATIC codechicken/microblock/FaceMicroblockClient$class.render (Lcodechicken/microblock/FaceMicroblockClient;Lcodechicken/lib/vec/Vector3;I)V
+    RETURN
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public onPartChanged(Lcodechicken/multipart/TMultiPart;)V
+    ALOAD 0
+    ALOAD 1
+    INVOKESTATIC codechicken/microblock/TMicroOcclusionClient$class.onPartChanged (Lcodechicken/microblock/TMicroOcclusionClient;Lcodechicken/multipart/TMultiPart;)V
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public onAdded()V
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/TMicroOcclusionClient$class.onAdded (Lcodechicken/microblock/TMicroOcclusionClient;)V
+    RETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public read(Lcodechicken/lib/data/MCDataInput;)V
+    ALOAD 0
+    ALOAD 1
+    INVOKESTATIC codechicken/microblock/TMicroOcclusionClient$class.read (Lcodechicken/microblock/TMicroOcclusionClient;Lcodechicken/lib/data/MCDataInput;)V
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public recalcBounds()V
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/TMicroOcclusionClient$class.recalcBounds (Lcodechicken/microblock/TMicroOcclusionClient;)V
+    RETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getPriorityClass()I
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/TMicroOcclusionClient$class.getPriorityClass (Lcodechicken/microblock/TMicroOcclusionClient;)I
+    IRETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getBrokenIcon(I)Lnet/minecraft/util/IIcon;
+    ALOAD 0
+    ILOAD 1
+    INVOKESTATIC codechicken/microblock/MicroblockClient$class.getBrokenIcon (Lcodechicken/microblock/MicroblockClient;I)Lnet/minecraft/util/IIcon;
+    ARETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public renderStatic(Lcodechicken/lib/vec/Vector3;I)Z
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    INVOKESTATIC codechicken/microblock/MicroblockClient$class.renderStatic (Lcodechicken/microblock/MicroblockClient;Lcodechicken/lib/vec/Vector3;I)Z
+    IRETURN
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public getRenderBounds()Lcodechicken/lib/vec/Cuboid6;
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/MicroblockClient$class.getRenderBounds (Lcodechicken/microblock/MicroblockClient;)Lcodechicken/lib/vec/Cuboid6;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public addHitEffects(Lnet/minecraft/util/MovingObjectPosition;Lnet/minecraft/client/particle/EffectRenderer;)V
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    INVOKESTATIC codechicken/multipart/TIconHitEffects$class.addHitEffects (Lcodechicken/multipart/TIconHitEffects;Lnet/minecraft/util/MovingObjectPosition;Lnet/minecraft/client/particle/EffectRenderer;)V
+    RETURN
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public addDestroyEffects(Lnet/minecraft/client/particle/EffectRenderer;)V
+    ALOAD 0
+    ALOAD 1
+    INVOKESTATIC codechicken/multipart/TIconHitEffects$class.addDestroyEffects (Lcodechicken/multipart/TIconHitEffects;Lnet/minecraft/client/particle/EffectRenderer;)V
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public getBreakingIcon(Ljava/lang/Object;I)Lnet/minecraft/util/IIcon;
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    INVOKESTATIC codechicken/multipart/JIconHitEffects$class.getBreakingIcon (Lcodechicken/multipart/JIconHitEffects;Ljava/lang/Object;I)Lnet/minecraft/util/IIcon;
+    ARETURN
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public microClass()Lcodechicken/microblock/FaceMicroClass$;
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/FaceMicroblock$class.microClass (Lcodechicken/microblock/FaceMicroblock;)Lcodechicken/microblock/FaceMicroClass$;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getBounds()Lcodechicken/lib/vec/Cuboid6;
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/FaceMicroblock$class.getBounds (Lcodechicken/microblock/FaceMicroblock;)Lcodechicken/lib/vec/Cuboid6;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public solid(I)Z
+    ALOAD 0
+    ILOAD 1
+    INVOKESTATIC codechicken/microblock/FaceMicroblock$class.solid (Lcodechicken/microblock/FaceMicroblock;I)Z
+    IRETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public redstoneConductionMap()I
+    ALOAD 0
+    INVOKESTATIC codechicken/multipart/TFacePart$class.redstoneConductionMap (Lcodechicken/multipart/TFacePart;)I
+    IRETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getSlot()I
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/CommonMicroblock$class.getSlot (Lcodechicken/microblock/CommonMicroblock;)I
+    IRETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getSlotMask()I
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/CommonMicroblock$class.getSlotMask (Lcodechicken/microblock/CommonMicroblock;)I
+    IRETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getPartialOcclusionBoxes()Ljava/util/List;
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/CommonMicroblock$class.getPartialOcclusionBoxes (Lcodechicken/microblock/CommonMicroblock;)Ljava/util/List;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public itemClassID()I
+    ALOAD 0
+    INVOKESTATIC codechicken/microblock/CommonMicroblock$class.itemClassID (Lcodechicken/microblock/CommonMicroblock;)I
+    IRETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public occlusionTest(Lcodechicken/multipart/TMultiPart;)Z
+    ALOAD 0
+    ALOAD 1
+    INVOKESTATIC codechicken/microblock/TMicroOcclusion$class.occlusionTest (Lcodechicken/microblock/TMicroOcclusion;Lcodechicken/multipart/TMultiPart;)Z
+    IRETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public edgeCornerOcclusionTest(Lcodechicken/microblock/TMicroOcclusion;Lcodechicken/microblock/TMicroOcclusion;)Z
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    INVOKESTATIC codechicken/microblock/TMicroOcclusion$class.edgeCornerOcclusionTest (Lcodechicken/microblock/TMicroOcclusion;Lcodechicken/microblock/TMicroOcclusion;Lcodechicken/microblock/TMicroOcclusion;)Z
+    IRETURN
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public allowCompleteOcclusion()Z
+    ALOAD 0
+    INVOKESTATIC codechicken/multipart/JPartialOcclusion$class.allowCompleteOcclusion (Lcodechicken/multipart/JPartialOcclusion;)Z
+    IRETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1041
+  public synthetic bridge getPartialOcclusionBoxes()Ljava/lang/Iterable;
+    ALOAD 0
+    INVOKEVIRTUAL Microblock_cmp$$3.getPartialOcclusionBoxes ()Ljava/util/List;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1041
+  public synthetic bridge microClass()Lcodechicken/microblock/MicroblockClass;
+    ALOAD 0
+    INVOKEVIRTUAL Microblock_cmp$$3.microClass ()Lcodechicken/microblock/FaceMicroClass$;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1041
+  public synthetic bridge microClass()Lcodechicken/microblock/CommonMicroClass;
+    ALOAD 0
+    INVOKEVIRTUAL Microblock_cmp$$3.microClass ()Lcodechicken/microblock/FaceMicroClass$;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+}
